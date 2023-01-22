@@ -47,12 +47,24 @@ import cloudscraper
 from bs4 import BeautifulSoup
 from config import Config
 cancel = False
+
+from dotenv import load_dotenv
+load_dotenv()
+os.makedirs("./downloads", exist_ok=True)
+#API_ID = 13407681
+#API_HASH = "26eca59cf75d56bff2b67aea2b783df0"
+#BOT_TOKEN = "5885958363:AAEUQhk4kZgrGRh9dVOwSbrHYEoOw-Bz8K0"
+#NAME = "BlackOuT"
+#API_ID = os.getenv('API_ID')
+#API_HASH = os.getenv('API_HASH')
+#BOT_TOKEN = os.getenv('BOT_TOKEN')
 bot = Client(
     "bot",
     bot_token=os.environ.get("BOT_TOKEN"),
     api_id=int(os.environ.get("API_ID")),
     api_hash=os.environ.get("API_HASH")
 )
+
 @bot.on_message(filters.command(["start"]))
 async def start(bot, update):
        await update.reply_text("Hi i am **Cw TxT Maker Bot**.\n\n"
