@@ -45,21 +45,9 @@ import sys
 import re
 import cloudscraper
 from bs4 import BeautifulSoup
-from config import Config
-cancel = False
-
-from dotenv import load_dotenv
-load_dotenv()
-os.makedirs("./downloads", exist_ok=True)
-#API_ID = 13407681
-#API_HASH = "26eca59cf75d56bff2b67aea2b783df0"
-#BOT_TOKEN = "5885958363:AAEUQhk4kZgrGRh9dVOwSbrHYEoOw-Bz8K0"
-#NAME = "BlackOuT"
-#API_ID = os.getenv('API_ID')
-#API_HASH = os.getenv('API_HASH')
-#BOT_TOKEN = os.getenv('BOT_TOKEN')
+import requests
 bot = Client(
-    "bot",
+    "CW",
     bot_token=os.environ.get("BOT_TOKEN"),
     api_id=int(os.environ.get("API_ID")),
     api_hash=os.environ.get("API_HASH")
