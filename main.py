@@ -63,7 +63,7 @@ async def start(bot, update):
                               "**𝗕𝗼𝘁 𝗢𝘄𝗻𝗲𝗿 : 𝗕𝗹𝗮𝗰𝗸𝗢𝘂𝗧 (•̪●)=︻╦̵̵̿╤── **")
 
 ACCOUNT_ID = "6206459123001"
-BCOV_POLICY = "BCpkADawqM1474MvKwYlMRZNBPoqkJY-UWm7zE1U769d5r5kqTjG0v8L-THXuVZtdIQJpfMPB37L_VJQxTKeNeLO2Eac_yMywEgyV9GjFDQ2LTiT4FEiHhKAUvdbx9ku6fGnQKSMB8J5uIDd"
+BCOV_POLICY = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhY2NpZCI6IjYyMDY0NTkxMjMwMDEiLCJleHAiOjE2NzQ0MzcyNzgsImlhdCI6MTY3NDM1MDg3OCwiY29uaWQiOiI2MzE2NzgwNzY1MTEyIiwibWF4aXAiOjF9.ppfK4t8cmaQvkEdjx3LlML15NNAjNSSmd2n3qm3O7dtvX4BD10Nu0QC7aKb6DVDh6mxuxULVBjCZnPVdSXlMhJvVVo74P5vuZ-rikcN2bhddL71PZO7SMMtaeIGn424B91VXDrZteTE1Du_lJzcp4pGTnZ1Xc6U-xUYGggqvUsroCd3aT8B1q1EfCR4XD_Sd83sohRzdF8eowsxtXCrkwK5W4xhpA8iJyFS9JejMhDs9k6C4gi6Bs2lVoSsxo-vEuqTj0SnYW5qyPkGTaEld36syO41XXIHpcGB95II9RTVkVbw7U2GiyV3vSdVZf4aL5ng_3Vf8UVl4R0No70bH4g"
 bc_url = (f"https://edge-auth.api.brightcove.com/playback/v1/accounts/{ACCOUNT_ID}/videos")
 bc_hdr = {"BCOV-POLICY": BCOV_POLICY}
 
